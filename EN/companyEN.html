@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Portail National IUT Informatique</title>
+ <link rel="stylesheet" href="../css/reset.css">
+ <link rel="stylesheet" href="../css/header.css">
+ <link rel="stylesheet" href="../css/formulaire.css">
+ <link rel="stylesheet" href="../css/company.css">
+ <link rel="stylesheet" href="../css/footer.css">
+ <script src="https://kit.fontawesome.com/3adf334fbd.js" crossorigin="anonymous"></script>
+ 
+</head>
+
+<body>
+    <header>
+        <nav id="menu-nav">
+            <a href="../EN/homeEN.html"><img id="logo" class="elem" src="../img/logo.png" alt="Logo Départements Informatique"></a>
+            <ul id="menu" class="elem">
+                <li>
+                    <a class="menu-nav" id="m1" href="../EN/homeEN.html"><i class="fas fa-home"></i> Home<i id="first" class="fas fa-caret-right"></i><i id="second" class="fas fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a class="menu-nav" href="../EN/testimonyEN.html">Testimonials</a></li>
+                        <li><a class="menu-nav" href="../EN/linkEN.html">Link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-nav" href="../EN/formationEN.html"><i class="fas fa-book"></i> Training<i id="third" class="fas fa-caret-right"></i><i id="fourth" class="fas fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a class="menu-nav" href="../EN/formationEN.html">The training</a></li>
+                        <li><a class="menu-nav" href="../EN/afterIutEN.html">After the IUT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-nav" href="../EN/companyEN.html"><i class="fas fa-user-tie"></i> Company</a>
+                </li>
+            </ul>
+            <div class="div-bar">
+                <div class="bar">
+                   <input type="text" class="searchTerm" placeholder="Search">
+                   <button type="submit" class="bar-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            <div id="flag" class="elem">
+                <a href="../FR/companyFR.html"><img class="flag-l" src="../img/france-flag-round-icon-128.png" alt="Drapeau France" width="70"></a>
+                <a href="../EN/companyEN.html"><img class="flag-l" src="../img/united-kingdom-flag-round-icon-128.png" alt="Drapeau Royaume Uni" width="70"></a>
+            </div>
+        </nav>
+    </header>
+    <h1><a href="entreprise.html">Entreprise</a></h1>
+    <div id="contenu">
+        <div id="left">
+            <div id="part" class="texte">
+                <h3>Partenariats</h3>
+                <p>Les entreprises partenaires de la formation correspondent aux grandes sociétés informatiques.</p>
+                <p>
+                    Les étudiants peuvent ainsi intégrer ces sociétés plus facilement à la fin de leur formation <br>
+                    via les stage de fin d’année.
+                </p>
+                <p>Voici une liste non-exhaustive des sociétés partenaires:</p>
+                <ul>
+                    <li><a href="https://atos.net/fr/">Atos</a></li>
+                    <li><a href="https://www.capgemini.com/fr-fr/">Capgemini</a></li>
+                    <li><a href="https://www.cigref.fr/">Cigref</a></li>
+                    <li><a href="https://www.ibm.com/fr-fr">IBM</a></li>
+                    <li><a href="https://www.microsoft.com/fr-fr">Microsoft</a></li>
+                    <li><a href="https://www.syntec.fr/">Syntec</a></li>
+                </ul>
+            </div>
+            <div id="partinternational" class="texte">
+                <h3>Partenariat à l'international</h3>
+                <p>
+                    En plus des partenariats professionnels, les départements d'informatique en partenariat avec <br>
+                    des universités étrangères accueillent des étudiants étrangers pour les former à l'informatique.
+                </p>
+                <p>Mais aussi en envoyant les étudiants effectuer leur stage à l'étranger.</p>
+                <p>On compte par exemple parmi ces universités: <a href="https://www.unb.br/"> Université de Brasilia</a></p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="wrapper">
+                <div class="inner">
+                <form method="post" action="index.php?a=sendCompany" enctype="multipart/form-data" class="fieldset-content">
+                <h6>Proposition de stage</h6>
+                <p></p>
+                <label class="form-group">
+                <input type="text" class="form-control" required="">
+                <span>*Nom de l'entreprise</span>
+                <span class="border"></span>
+                </label>
+                <label class="form-group">
+                <input type="text" class="form-control" required="">
+                <span for="">*Adresse mail de l'entreprise</span>
+                <span class="border"></span>
+                </label>
+                <label class="form-group">
+                <textarea name="" id="" class="form-control" required=""></textarea>
+                <span for="">*Objet</span>
+                <span class="border"></span>
+                </label>
+                <button>Envoyer
+                <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+                </form>
+                </div>
+                </div>
+        </div>
+
+    </div>
+    <!-- *************************************************************************************************************  -->
+    
+    <footer>
+		<div id="contenufooter">
+			<div id="coordonnee_footer" class="bloc_footer">
+				<p>Contact information :</p>
+				<p id="p2footer">webmaster@iut-informatique.fr</p>
+			</div>
+			<div id="cv_footer" class="bloc_footer">
+				<p>Our CV :
+					<a href="../cv/CV_AN_Gosselet_Baptiste.pdf">Baptiste</a>
+					<a href="">Rayane</a>
+					<a href="">Ryan</a>
+				</p>              
+			</div>
+		</div>
+	</footer>
+</body>

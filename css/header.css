@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+/* **************************************************************************************************************************************************** */
+
+header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;   
+    border-bottom: 2px solid black;
+    box-shadow: 0px 2px 8px black;
+    /*background-color:#FBFEF9;*/
+    background-color: #FEFFFD;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a.menu-nav {
+    display: block;
+    color: blueviolet;
+    padding: 20px;
+    font-size: 35px;
+}
+
+header li:hover a.menu-nav {
+    background-color: #FFFAFA;
+    color: black;
+    border: 1px solid black;
+
+}
+
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+header li:hover .submenu {
+    display: block;
+    position: absolute;
+}
+
+header ul {
+    display: inline;
+}
+
+header ul#menu {
+    margin-top: 25px;
+    margin-left: -180px;
+    
+}
+
+header #flag {
+    margin-top: 25px;
+}
+
+header ul.submenu {
+    display: none;
+    width: 300px;
+}
+
+header ul.submenu a.menu-nav {
+    color: rgb(58, 23, 68);
+}
+
+header ul.submenu li {
+    display: block;
+}
+
+header ul.submenu li:hover a.menu-nav {
+    color: #808080;
+    transition: all 0.3s;
+}
+
+header .flag-l {
+    margin-right: 9px;
+}
+
+header .flag-l:hover {
+    opacity: 0.5;
+}
+
+
+header i {
+    margin-left: 5px;
+}
+
+header i#second, header i#fourth {
+    display: none;
+}
+
+header li:hover i#second, header li:hover i#fourth {
+    display: block;
+}
+
+header li:hover i#first, header li:hover i#third {
+    display: none;
+}
+
+.bar {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #8100cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.bar-btn {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #500672;
+  background: #920ad1;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+}
+
+.div-bar{
+  width: 11%;
+  position: absolute;
+  top: 50%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1300px){
+    header img#logo {
+        width: 220px;
+    }
+    header ul#menu {
+        margin-left: -20px;
+    }
+    header a.menu-nav {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    header .flag-l {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header a.menu-nav {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    header a.menu-nav {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    header img#logo {
+        width: 100px;
+    }
+}

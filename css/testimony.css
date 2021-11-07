@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap');
+
+body {
+    background: url(../img/black-1072366_960_720.webp) no-repeat;
+    background-size: cover;
+}
+
+#testimonials {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials h3 {
+    font-family: 'Kufam', cursive;
+    color: #388E3C;
+}
+
+#testimonials p {
+    line-height: 25px;
+}
+
+#topTestimony {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#botTestimony {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.testimony {
+    background-color: #eef0f2;
+    padding: 30px;
+    width: 700px;
+    border-radius: 20px;
+}

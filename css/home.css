@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap');
+
+body {
+    background: url(../img/3fond.png) no-repeat fixed;
+    background-size: 100% 1150px;
+    /* background-color: #00c300c9;*/
+}
+
+#main {
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    width: 100%;
+}
+
+header, #intro, #stats, #map {
+    flex: 1 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+ul#p1 p {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 10px;
+    font-family: 'Kufam', cursive;
+    color: #388E3C;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#intro {
+    
+    background-color: #ECEFF1;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 24px;
+    margin-top: 170px;
+    padding: 50px;
+    
+}
+
+#intro p {
+    line-height: 18px;
+}
+
+ul#p1 {
+    margin-left: 50px;
+}
+
+#plink-map {
+    color: #0B0080;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#plink-map:hover {
+    color: rgb(31, 31, 31);
+}
+
+#logomap {
+    margin-right: 17px;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 65px;
+}
+
+#stats i {
+    color: #424242;
+}
+
+
+
+.stat {
+    background-color: #ECEFF1;
+    color: black;
+    padding: 10px;
+    padding-top: 30px;
+    width: 550px;
+    height: 370px;
+    margin-right: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.stat p {
+    margin-top: 37px;
+    font-family: 'Kufam', cursive;
+    color: #388E3C;
+}
+
+#s1 p {
+    font-size: 30px;
+}
+
+#s2 p {
+    font-size: 30px;
+}
+
+#map {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: #ECEFF1;
+    width: 55%;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+#map img {
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+#text-map {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#text-map p#tMap {
+    font-size: 20px;
+}
+
+.listVille {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    color: black;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1140px){
+    #text-map {
+        display: none;
+    }
+
+    #map {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 790px){
+    #stats {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 966px){
+    #logoart img {
+        display: none;
+    }
+}

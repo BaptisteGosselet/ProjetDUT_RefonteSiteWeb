@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap');
+
+body {
+    background: url(../img/3fond.png) no-repeat fixed;
+    background-size: 100% 1150px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Kufam', cursive;
+}
+
+#premiersLiens {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#premier {
+    margin-right: 25px;
+}
+
+#deuxieme {
+    margin-left: 25px;
+}
+
+#link {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 180px;
+    margin-bottom: 1px;
+}
+
+#end {
+    margin-bottom: 50px;
+}
+
+.links {
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.links p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links p a {
+    margin-bottom: 4px;
+    color: green;
+}
+
+.links p a:hover {
+    text-decoration: underline;
+}
